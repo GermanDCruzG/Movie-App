@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Sweet Alert 2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="./CSS/styles.css">
+</head>
+
+<body>
+    <div class="container mt-5 text-center">
+        <h1 class="mb-4">Movie App</h1>
+        <!-- Formulario -->
+        <form id="searchForm" class="d-flex justify-content-center mb-4">
+            <input type="text" id="movieInput" class="form-control w-50 me-2" placeholder="Nombre de la película"
+                required>
+            <button class="btn btn-primary" type="submit">Buscar</button>
+        </form>
+        <!-- Favoritos -->
+        <a href="./favoritos.html" class="btn btn-warning mb-4">Ver Favoritos</a>
+        <!-- Resultados -->
+        <div id="results" class="row justofy-content-center"></div>
+    </div>
+    <!-- Favoritos JS -->
+    <script src="./JS/favoritos.js"></script>
+    <!-- JS -->
+    <script src="./JS/app.js"></script>
+
+    <!-- Modal detalles -->
+    <div class="modal fade" id="movieModal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" id="modalBody"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+body {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+.card img {
+    height: 350px;
+    object-fit: cover;
+}
+
+.card {
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+.modal-content {
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: #6f42c1;
+    border: none;
+}
+
+.btn-secondary {
+    margin: 35px;
+}
