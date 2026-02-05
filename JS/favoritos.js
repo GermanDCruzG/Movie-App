@@ -28,7 +28,7 @@ function mostrarFavoritos() {
         col.innerHTML = `
             <div class="card h-100 border-warning">
                 <img src="${pelicula.Poster !== "N/A" ? pelicula.Poster : "https://via.placeholder.com/300x450"}" class="card-img-top">
-                <div class="card-body">
+                <div class="card-body d-flex flex-column align-items-center">
                     <h6>${pelicula.Title}</h6>
                     <p>${pelicula.Year}</p>
                     <button class="btn btn-sm btn-danger btn-remove">❌ Quitar</button>

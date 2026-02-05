@@ -4,6 +4,13 @@ const results = document.getElementById("results");
 
 const API_KEY = "4965fb4e";
 
+let movieModal;
+
+document.addEventListener("DOMContentLoaded", () => {
+    const modalElement = document.getElementById("movieModal");
+    movieModal = new bootstrap.Modal(modalElement);
+});
+
 form.addEventListener("submit", function (event) {
     event.preventDefault();
 
@@ -77,7 +84,7 @@ function verDetalle(id) {
                 <p><strong>Sinopsis:</strong> ${peli.Plot}</p>
             `;
 
-            new bootstrap.Modal(document.getElementById("movieModal")).show();
+            movieModal.show();
         });
 }
 
