@@ -3,6 +3,10 @@ body {
     color: #f1f1f1;
 }
 
+p {
+    text-align: center;
+}
+
 .card img {
     height: 350px;
     object-fit: cover;
